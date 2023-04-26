@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+    <replace sel="//effect/@name='impact_gen_m_flak_01_mk1'"> 
+        <effect name="impact_gen_m_flak_01_mk1" alignment="random" emitterspace="zone">
+            <elements>
+            <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
+            <element id="1" ref="missile_impact_01_light_macro" forkeffect="none" alignment="random" duration="0.8" forklod="none"></element>
+            <!-- Explosion Fork Particles-->
+            <element id="2" ref="dummyemitter_macro" forkeffect="flak_impact" alignment="random" emitterspace="zone" forcezonespace="true" duration="3" minscale="3" maxscale="3.5" forklod="largeeffect"></element>
+            <!--element id="7" ref="dummyemitter_macro" forkeffect="sparkcloud" alignment="random" duration="7.0" minscale="2.0" maxscale="4.0" forklod="mediumeffect"></element-->
+            <!-- Area DMG -->
+            <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="3.0" minscale="3" maxscale="3.5" forklod="none">
+                <areadamage range="256" falloff="1.0" duration="3.0"/>
+            </element>
+            <!-- Sound -->
+            <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="mediumeffect">
+                <sound ref="flak_impact"></sound>
+            </element>
+            </elements>
+        </effect>
+    </replace>
+</diff>

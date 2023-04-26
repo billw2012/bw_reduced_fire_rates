@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+  <replace sel="//reload">
+    <reload rate="1" />
+  </replace>
+  <replace sel="//damage">
+    <damage value="70" repair="0" />
+  </replace>
+</diff>
+
+<!-- 
+<macros>
+  <macro name="bullet_xen_turret_m_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_xen_s_laser_01_mk1" />
+    <properties>
+      <bullet speed="2448" lifetime="1.324" amount="1" barrelamount="2" timediff="0.021" angle="0.21" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <reload rate="5" />
+      <damage value="14" repair="0" />
+      <effects>
+        <impact ref="impact_xen_s_laser_01_mk1" inside="impact_xen_s_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_xen_s_laser_01_mk1_bigobject" inside="impact_xen_s_laser_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_turret_xen_m_laser_01_mk1" />
+      </effects>
+      <weapon system="turret_midrange" />
+    </properties>
+  </macro>
+</macros>
+-->
